@@ -8,6 +8,7 @@
   <ItemGroup>
       <Compile Include="Logic.fs" />
     <Compile Include="CNFConversion.fs" />
+    <Compile Include="Resolution.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

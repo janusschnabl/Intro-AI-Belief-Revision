@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("BeliefRevision")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03bd256784936290e0fb4a0b8ce7def9811bd2c9")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7946d77aaf429216b986b4c40a12bd3b65d0fc04")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("BeliefRevision")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("BeliefRevision")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
