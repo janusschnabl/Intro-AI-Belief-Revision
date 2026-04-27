@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "VfkXxqecKPM=",
+  "success": true,
+  "projectFilePath": "/home/janusds/school/Intro-AI-Belief-Revision/BeliefRevision/BeliefRevision.fsproj",
+  "expectedPackageFiles": [
+    "/home/janusds/.nuget/packages/fsharp.core/10.0.104/fsharp.core.10.0.104.nupkg.sha512",
+    "/home/janusds/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
