@@ -1,11 +1,25 @@
 ﻿open Logic
 open CNFConversion
 open Resolution
+open BeliefBase
 
 [<EntryPoint>]
 let main _ =
-    // KB: p. Query: q. Should be false — p does not entail q
-    let kb2 = convertToCNF (Atom "p")
-    let query2 = Atom "q"
-    printfn "Entails q from p only: %b" (entails kb2 query2)
+    let bb =
+        []
+        |> expand (Atom "p") 1
+        |> expand (Implies (Atom "p", Atom "q")) 2
+    
+    printfn "Initial belief base:"
+    printBeliefBase bb
+
+    printfn "\nEntails q: %b" (entails bb (Atom "q"))
+
+    let bb' = revise bb (Not (Atom "q")) 0
+
+    printfn "\nAfter revision with ¬q:"
+    printBeliefBase bb'
+
+    printfn "\nEntails q: %b" (entails bb' (Atom "q"))
+    
     0
