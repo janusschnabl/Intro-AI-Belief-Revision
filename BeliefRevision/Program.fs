@@ -2,6 +2,7 @@
 open CNFConversion
 open Resolution
 open BeliefBase
+open AGMtests
 
 [<EntryPoint>]
 let main _ =
@@ -21,5 +22,16 @@ let main _ =
     printBeliefBase bb'
 
     printfn "\nEntails q: %b" (entails bb' (Atom "q"))
-    
+
+
+    let p = Atom "p"
+    let phi = Atom "q"
+
+    let B =
+        []
+        |> expand p 5
+        |> expand (Implies(p, phi)) 10
+
+    printTestResult (testInclussionPostulate B phi)
+
     0
