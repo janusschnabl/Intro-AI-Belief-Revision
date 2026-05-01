@@ -10,6 +10,9 @@
     <Compile Include="CNFConversion.fs" />
     <Compile Include="Resolution.fs" />
     <Compile Include="BeliefBase.fs" />
+    <Compile Include="TestResultHelper.fs" />
+    <Compile Include="AGMContractionTests.fs" />
+    <Compile Include="AGMRevisionTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
