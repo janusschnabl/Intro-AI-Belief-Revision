@@ -30,7 +30,7 @@ let AGMRevisionTests =
 
     let tests =
         [
-            SuccesPostulateTest 
+            SuccesPostulateTest B1 q
         ]
 
     tests |> List.iter (fun t -> printfn "%s" (toString t))

@@ -2,7 +2,9 @@
 open CNFConversion
 open Resolution
 open BeliefBase
-open AGMtests
+open AGMContractionTests
+open AGMRevisionTests
+open TestResultHelper
 
 [<EntryPoint>]
 let main _ =
@@ -32,6 +34,12 @@ let main _ =
         |> expand p 5
         |> expand (Implies(p, phi)) 10
 
-    printTestResult (testInclussionPostulate B phi)
+    InclussionPostulateTest B phi
+    |>  toString
+    |> printfn "%s"
+
+    RunAllAGMContractionTests
+
+    AGMRevisionTests
 
     0
